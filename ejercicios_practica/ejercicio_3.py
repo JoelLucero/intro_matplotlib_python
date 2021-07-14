@@ -33,5 +33,15 @@ if __name__ == '__main__':
     # Elegir un marker a elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle('Ejercicio3', fontsize=16)
+    ax = fig.add_subplot()
 
+    ax.scatter(x, y, c='navy',marker='.', label= "y = np.tanh(x)")
+    ax.set_facecolor('darkorange')
+    ax.set_ylabel("Y")
+    ax.set_xlabel("X")
+    ax.legend()
+    plt.show()
+  
     print("terminamos")

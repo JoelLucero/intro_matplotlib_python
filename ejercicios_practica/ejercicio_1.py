@@ -37,5 +37,14 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle('Ejercicio', fontsize=16)
+    ax = fig.add_subplot()
 
+    ax.plot(x, y, c='lime',marker='^', label= "y=x**2")
+    ax.set_facecolor('moccasin')
+    ax.set_ylabel("Y")
+    ax.set_xlabel("X")
+    ax.legend()
+    plt.show()
     print("terminamos")
